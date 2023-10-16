@@ -17,7 +17,7 @@ class AuthService {
       } else if (e.code == 'email-already-in-use') {
         return 'The account already exists for that email.';
       } else {
-        return e.message;
+        return 'there is something wrong';
       }
     } catch (e) {
       return e.toString();
@@ -40,7 +40,7 @@ class AuthService {
       } else if (e.code == 'wrong-password') {
         return 'Wrong password provided for that user.';
       } else {
-        return e.message;
+        return 'there is something wrong';
       }
     } catch (e) {
       return e.toString();
